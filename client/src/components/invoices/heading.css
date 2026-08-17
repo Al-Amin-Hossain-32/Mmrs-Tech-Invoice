@@ -1,0 +1,43 @@
+.heading-container{
+    width: 184mm;
+    font-family: "Roboto", sans-serif;
+}
+
+.heading{
+   text-align: center;
+   width: 100mm;
+   padding-left: 6rem;
+}
+
+.barcode{
+    text-align: right;
+    width: 100mm;
+    
+   
+}
+
+ .main-invoice{
+    position: relative;
+   
+ }
+
+ .main-invoice::before{
+    position: absolute;
+    content: '';
+    width: 722px;
+    height: 485px;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    background-color: #464545;
+}
+ .main-invoice::after{
+    position: absolute;
+    content: '';
+    width: 722px;
+    height: 155px;
+    bottom: -2px;
+    left: -2px;
+    z-index: -1;
+    background-color: #474646;
+ }
